@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da00858f-cf02-41b1-a35c-cc2700e2ff66" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/finalfrontier/static/css/finalfrontier.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html" afterPath="$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html" />
-      <change beforePath="$PROJECT_DIR$/finalfrontier/views.py" afterPath="$PROJECT_DIR$/finalfrontier/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalfrontier/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -36,6 +33,16 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,14 +68,14 @@
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/finalfrontier/urls.py" />
         <option value="$PROJECT_DIR$/finalfrontier/views.py" />
-        <option value="$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html" />
         <option value="$PROJECT_DIR$/finalfrontier/static/css/finalfrontier.css" />
+        <option value="$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
-    <option name="y" value="145" />
+    <option name="x" value="108" />
+    <option name="y" value="216" />
     <option name="width" value="1459" />
     <option name="height" value="866" />
   </component>
@@ -115,6 +122,19 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FinalFrontier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalFrontier" type="462c0819:PsiDirectoryNode" />
+              <item name="finalfrontier" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalFrontier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalFrontier" type="462c0819:PsiDirectoryNode" />
+              <item name="finalfrontier" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="finalfrontier" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -155,7 +175,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="145" width="1459" height="866" extended-state="0" />
+    <frame x="108" y="216" width="1459" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24982406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -234,14 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finalfrontier/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -249,6 +261,14 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalfrontier/templates/finalfrontier/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
