@@ -6,6 +6,8 @@ from.services import get_iss_location
 
 def home(request):
     #space = get_object_or_404(Space)
-    Space.iss_current_location = get_iss_location()
-    return render(request, 'finalfrontier/home.html', {'space': Space})
+    Space.location = get_iss_location()
+    Space.lat=Space.location['latitude']
+    Space.lon = Space.location['longitude']
+    return render(request, 'finalfrontier/home.html', {'Space': Space})
 
