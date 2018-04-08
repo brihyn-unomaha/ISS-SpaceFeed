@@ -15,6 +15,9 @@ def home(request):
 
     #NASA RSS Feed retrieval for Project Status
 
+    #NASA Twitter Feed
+
+    #Creating image of Earth with ISS Positioned on it.
 
     # Send the Space class to the html page
     return render(request, 'finalfrontier/home.html', {'Space': Space})
