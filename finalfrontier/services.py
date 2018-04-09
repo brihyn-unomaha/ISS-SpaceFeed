@@ -19,18 +19,14 @@ def get_astronauts():
     spacecadets = result['people']
     return(spacecadets)
 
-# Function get_astronauts currently on the ISS
+# Function get_NASA current daily project update
 def get_iss_project_update():
     url = f'https://blogs.nasa.gov/stationreport/feed/'
     reg = requests.get(url)
     soup = BeautifulSoup(reg.text)
-    reg.text #// XML as a string
-    #articles = soup.findAll('item')
-    articles = soup.find('item')
-    status_update = articles.find('description')
-    #for article in articles:
-    #    status_update .title = article.find('title')
-    #    status_update.description = article.find('description')
-    #    status_update.link = article.find('link')
-    #    status_update.pubdate = article.find('pubDate')
+    articles = soup.findAll('item')
+    for article in articles:
+        status_update = article.find('description')
+        status_update = str(status_update) #switch the output to a string
+        break #couldn't figure out how to get only the latest RSS update, so this would loop through all...but we break after the first.
     return(status_update)
