@@ -65,3 +65,8 @@ font-size:100px;
 .fixtop {
 margin-top:5%;
 }
+
+.link {
+color:white;
+text-decoration: underline;
+}

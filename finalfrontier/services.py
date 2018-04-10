@@ -29,4 +29,6 @@ def get_iss_project_update():
         status_update = article.find('description')
         status_update = str(status_update) #switch the output to a string
         break #couldn't figure out how to get only the latest RSS update, so this would loop through all...but we break after the first.
-    return(status_update)
+    a, b, cleanup = status_update.split('[', 3)
+    cleanup2, d = cleanup.split('&', 2)
+    return(cleanup2)
