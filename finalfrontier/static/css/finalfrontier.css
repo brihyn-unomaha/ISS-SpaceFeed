@@ -1,3 +1,67 @@
 body {
-    padding-left: 15px;
+font-family: 'Roboto Condensed' !important;
+text-decoration: none !important;	
+color:#FFFFFF;
+background: #212121
+}
+
+.photo {
+#background:#FFFFFF;
+margin: 10px 0px 10px 0px;
+width:90%;
+height:80%;
+border-radius:25px;
+}
+
+.headfoot {
+background:#303030;
+border-radius:25Px;
+margin: 0 auto 0 auto;
+font-weight:bold;
+text-align:center;	
+}
+
+.main-div {
+margin: 0 auto 0 auto;
+width:95%;
+}
+
+.center-content {
+
+}
+
+.content {
+
+}
+
+.lefty {
+float:left;
+width:50%;
+}
+
+.righty {
+float:right;
+width:50%;
+}
+
+.bottom {
+font-size: 30px;
+text-decoration: underline;
+font-weight: bold;
+padding-top: 20px;
+}
+
+.inside {
+font-size: 26px;
+font-weight: bold;
+width: 40%;
+padding: 8px 0px 8px 0px;
+}
+
+.top {
+font-size:100px;
+}
+
+.fixtop {
+margin-top:5%;
 }

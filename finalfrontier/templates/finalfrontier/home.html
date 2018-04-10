@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/finalfrontier.css' %}">
+<head class="headunit"><!--A fancy name for the head-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/finalfrontier.css' %}">
     <meta charset="UTF-8">
     <title>Final Frontier - NASA and ISS Tracking</title>
 </head>
 <body>
-Welcome to the Final Frontier.<br>
-<br>
+<!--All parts of the head, just basically the welcome sign.
+had a logo before an included it but It's not so useful with the dark design.-->
+<div class="headfoot main-div top">
+<!--<img class="logo" src="static/media/logo.png"></img><br>-->
+Welcome to the Final Frontier
+</div>
+<!--MOST main content held in this div-->
+<div class="content main-div">
+<br><br>
+<div style="width:100%">
+<!--Float left-->
+<div class="lefty">
+<div class="inside headfoot">
+Where is the ISS?
+</div><br>
 Current Latitude/Longitude of the ISS: {{Space.location}}<br>
 Current Latitude of the ISS:           {{Space.lat}}<br>
 Current Longitude of the ISS:          {{Space.lon}}<br>
-<br>
-Astronauts on the ISS:  {{Space.spacecadets}}<br>
-<br>
-Current NASA picture of the day:<br>
-<br>
-Current NASA project update:  <br>
+Current location of ISS on the globe:<br><br>
+</div>
+<!--Float right-->
+<div class="righty">
+<div class="inside headfoot">
+Keep up with the Crew!
+</div><br>
+Current NASA tweets:<br>
+Astronauts on the ISS:  
+{{Space.spacecadets}}<br><br><br>
+</div>
+<br></div>
+<br><br><br><br>
+<!--Had to fix the top of this heading, 
+it kept coming up into the floaters-->
+<div style="text-align:center">
+<div class="inside headfoot fixtop">
+Current Project Update  <br>
+</div><br>
 {{Space.status_update}}<br>
 <br>
-Current NASA tweets:<br>
-<br>
-Current location of ISS on the globe:<br>
-
+</div>
+</div>
+<!--Picture of the day! Left out padding so picture could be put in.
+Also left in a dummy picture tag.-->
+<div class="headfoot main-div">
+<div class="bottom">
+Current NASA Picture of the Day<br>
+<!--img class="photo" href="nasaphoto" alt="Picture of the Day!"></img-->
+</div>
+</div>
+</body>
 </html>
