@@ -17,6 +17,15 @@ def get_astronauts():
     response = urllib.request.urlopen(url)
     result= json.loads(response.read())
     spacecadets = result['people']
+	#Not sure what to put in place of "p", but replacing that
+	#value with the iteration of spacecadets should run the page
+	#and fix the bracket issue
+    #spacestr = ''.join(str(p) for p in spacecadets)
+    #a, cleanup = spacestr.split('[', 2)
+    #cleanup2, b = spacestr.split(']', 2)
+	#when uncommenting this code, remove the current return 
+	#for spacecadets, we'll be using cleanup2
+	#reutrn(cleanup2)
     return(spacecadets)
 
 # Function get_NASA current daily project update
