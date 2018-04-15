@@ -1,0 +1,15 @@
+just an empty txt page for the image of the day info:
+
+URL:
+ https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss
+Link:
+<enclosure url="http://www.nasa.gov/sites/default/files/thumbnails/image/superearth20180412-16.jpg" length="88886" type="image/jpeg" />
+Feed:
+ <item> <title>NASA&#039;s TESS Mission Hopes to Find Exoplanets Beyond Our Solar System</title>
+ <link>http://www.nasa.gov/image-feature/nasas-tess-mission-hopes-to-find-exoplanets-beyond-our-solar-system</link>
+ <description>The worlds orbiting other stars are called “exoplanets,” and they come in a wide variety of sizes, from gas giants larger than Jupiter to small, rocky planets about as big around as Earth or Mars. This rocky super-Earth is an illustration of the type of planets future telescopes, like NASA&#039;s TESS, hope to find outside our solar system.</description>
+ <enclosure url="http://www.nasa.gov/sites/default/files/thumbnails/image/superearth20180412-16.jpg" length="88886" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.nasa.gov/image-feature/nasas-tess-mission-hopes-to-find-exoplanets-beyond-our-solar-system</guid>
+ <pubDate>Fri, 13 Apr 2018 13:56 EDT</pubDate>
+ <source url="http://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss">NASA Image of the Day</source>
+</item>

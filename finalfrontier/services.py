@@ -2,6 +2,8 @@ import requests
 import json
 import urllib.request
 from bs4 import BeautifulSoup
+import feedparser
+
 
 # Function get_iss_location gets the current location of the ISS as a comobined lat/lon json
 def get_iss_location():
@@ -32,3 +34,9 @@ def get_iss_project_update():
     a, b, cleanup = status_update.split('[', 3)
     cleanup2, d = cleanup.split('&', 2)
     return(cleanup2)
+
+def get_NASA_IOTD():
+    url = f'https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss'
+    feedurl = feedparser.parse(url)
+    iotd_Url = feedurl.entries[00].links[1].href
+    return (iotd_Url)

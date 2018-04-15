@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Space
-from.services import get_iss_location, get_astronauts, get_iss_project_update
+from.services import get_iss_location, get_astronauts, get_iss_project_update, get_NASA_IOTD
 
 
 def home(request):
@@ -21,7 +21,9 @@ def home(request):
 
     #NASA RSS Feed retrieval for Project Status
     Space.status_update = get_iss_project_update()
-    #Space.projectstatus
+
+    #NASA RSS Feed retreival for Image of the Day
+    Space.daily_image = get_NASA_IOTD()
 
     #NASA Twitter Feed
 
