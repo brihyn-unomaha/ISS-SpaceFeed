@@ -119,7 +119,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+os.makedirs(STATIC_TMP, exist_ok=True)
 TWITTER_CONSUMER_KEY = 'reKUmp7mpeUHRSFb631iHE2xM'
 TWITTER_CONSUMER_SECRET = '1nPGzOKVDWOwSgfS88Hv5uLCX4AmEKRwXmx8DuRrxgveRafSUV'
 TWITTER_OAUTH_TOKEN = ' 637024253-XVCXLU06ldeJ7qonSnNpiIaOxqV3gROExU4TpWVV'
