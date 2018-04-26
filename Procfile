@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi --preload
+web: gunicorn issspacefeed.wsgi --preload
