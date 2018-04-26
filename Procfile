@@ -1,1 +1,2 @@
-web: gunicorn issspacefeed.wsgi --preload
+gunicorn finalfrontier:app
+web: gunicorn finalfrontier.wsgi --preload
