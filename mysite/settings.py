@@ -124,3 +124,7 @@ TWITTER_CONSUMER_KEY = 'reKUmp7mpeUHRSFb631iHE2xM'
 TWITTER_CONSUMER_SECRET = '1nPGzOKVDWOwSgfS88Hv5uLCX4AmEKRwXmx8DuRrxgveRafSUV'
 TWITTER_OAUTH_TOKEN = ' 637024253-XVCXLU06ldeJ7qonSnNpiIaOxqV3gROExU4TpWVV'
 TWITTER_OAUTH_SECRET = '395dQWZLBUzHnC9cw4QCErgRmbshXakPNZzld1UrBTrcT'
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
