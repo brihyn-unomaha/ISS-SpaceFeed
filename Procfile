@@ -1,1 +1,1 @@
-web: gunicorn finalfrontier.wsgi_appllication --preload
+web: gunicorn finalfrontier.wsgi:appllication --preload
