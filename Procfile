@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:80 mysite.wsgi:application --preload
+web: gunicorn mysite.wsgi:application --preload
