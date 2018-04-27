@@ -46,22 +46,20 @@ Where is the ISS?
 <!--Float right-->
 <div class="righty">
 <div class="inside headfoot">
-Keep up with the Crew!
-</div><br><br><br><br>
-Current NASA tweets:<br>
-<div class="tweets">
-	
-	
+Astronauts on the ISS!
 </div>
-Astronauts on the ISS:  
-{{Space.spacecadets}}<br><br><br>
+<h2 class="center-content">  
+{%for name in Space.spacecadets %}
+{{name}}<br>
+{%endfor%}
+</h2>
 </div>
 <br></div>
 <br><br><br><br>
 <!--Had to fix the top of this heading, 
 it kept coming up into the floaters-->
 <div style="text-align:center">
-<div class="inside headfoot fixtop">
+<div class="inside headfoot fixtop center-content">
 Current Project Update  <br>
 </div><br>
 <div id="status">

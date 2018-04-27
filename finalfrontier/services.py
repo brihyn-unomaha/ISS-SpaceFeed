@@ -3,7 +3,7 @@ import json
 import urllib.request
 from bs4 import BeautifulSoup
 import feedparser
-
+import ast
 
 # Function get_iss_location gets the current location of the ISS as a comobined lat/lon json
 def get_iss_location():
@@ -15,19 +15,15 @@ def get_iss_location():
 
 # Function get_astronauts currently on the ISS
 def get_astronauts():
-    url = f'http://api.open-notify.org/astros.json'
-    response = urllib.request.urlopen(url)
-    result= json.loads(response.read())
+    getresp = f'http://api.open-notify.org/astros.json'
+    request = requests.get(getresp)
+    requester = request.json()
+    dump = json.dumps(requester)
+    result= json.loads(dump)
     spacecadets = result['people']
-	#Not sure what to put in place of "p", but replacing that
-	#value with the iteration of spacecadets should run the page
-	#and fix the bracket issue
-    #spacestr = ''.join(str(p) for p in spacecadets)
+    #spacestr = ''.join(spacecadets)
     #a, cleanup = spacestr.split('[', 2)
     #cleanup2, b = spacestr.split(']', 2)
-	#when uncommenting this code, remove the current return 
-	#for spacecadets, we'll be using cleanup2
-	#reutrn(cleanup2)
     return(spacecadets)
 
 # Function get_NASA current daily project update
