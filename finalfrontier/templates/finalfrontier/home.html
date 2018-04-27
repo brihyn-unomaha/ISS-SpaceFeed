@@ -50,7 +50,7 @@ Keep up with the Crew!
 </div><br><br><br><br>
 Current NASA tweets:<br>
 <div class="tweets">
-	{% get_tweets for "Space_Station" as tweets %}
+	
 	
 </div>
 Astronauts on the ISS:  
@@ -81,5 +81,11 @@ NASA Picture of the Day</a><br>
 <img class="photo" src="{{Space.daily_image}}" href="nasaphoto" alt="Picture of the Day!"></img>
 </div>
 </div>
+{% get_tweets for "Nebrethar" as tweets limit 10 %}
+<ul>
+{% for tweet in tweets %}
+    <li>{{ tweet.html|safe }}</li>
+{% endfor %}
+</ul>
 </body>
 </html>
