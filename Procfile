@@ -1,1 +1,1 @@
-web: gunicorn finalfrontier.wsgi:appllication --preload
+gunicorn --bind 0.0.0.0:8000 myproject.wsgi:application
