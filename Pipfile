@@ -35,7 +35,7 @@ twitter = "==1.18.0"
 "urllib3" = "==1.22"
 whitenoise = "==3.3.1"
 Django = "==2.0.4"
-Pygments = "==2.2.0"
+Pygments = "==2.7.4"
 PyJWT = "==1.5.3"
 PySocks = "==1.6.8"
 
